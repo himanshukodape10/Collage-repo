@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #5065c4, #804fb1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    color: white;
+  }
+  
+  /* Title */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Layout */
+  .task-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .task-form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+  }
+  
+  .task-form button {
+    background: linear-gradient(135deg, #f4468f, #ff758c);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .task-form button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Table */
+  .table-wrapper {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  th {
+    background: rgba(255,255,255,0.2);
+    padding: 12px;
+  }
+  
+  td {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Status Colors */
+  .Pending { color: #ffd166; font-weight: bold; }
+  .InProgress { color: #00c2ff; font-weight: bold; }
+  .Completed { color: #06d6a0; font-weight: bold; }
+  
+  /* Buttons */
+  .action-btn {
+    margin: 2px;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .update-btn {
+    background: #4960f4;
+    color: white;
+  }
+  
+  .delete-btn {
+    background: #ff0808;
+    color: white;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .task-form {
+      grid-template-columns: 1fr;
+    }
+  }
